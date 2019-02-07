@@ -20,11 +20,14 @@ class ProductController extends Controller
      */
     public function indexAction()
     {
-        $products = $this->get('product.service')->getAllProducts();
+
+        $this->get('lexik_jwt_authentication.encoder')->encode(['tist']);
+
+       // $products = $this->get('product.service')->getAllProducts();
 
         return $this->render('product/index.html.twig', [
             'controller_name' => 'ProductController',
-            'products' => $products,
+            'products' => [],
         ]);
     }
 }

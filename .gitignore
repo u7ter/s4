@@ -17,3 +17,7 @@
 ###< symfony/web-server-bundle ###
 /.env
 /.idea/
+/.docker/data/
+###> lexik/jwt-authentication-bundle ###
+/config/jwt/*.pem
+###< lexik/jwt-authentication-bundle ###
